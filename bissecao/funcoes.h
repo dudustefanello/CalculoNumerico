@@ -21,6 +21,22 @@ double f4(double x){
   return x * cos(x) - 2 * pow(x, 2) + 3 * x - 1;
 }
 
+double f5(double x){
+  return 3 * x - pow(M_E, x);
+}
+
+double f6(double x){
+  return x + 3 * cos(x) - pow(M_E, x);
+}
+
+double f7(double x){
+  return /*pow(x, 3) - 4 * x + 4 - */log(x);
+}
+
+double f8(double x){
+  return x + 1 - 2 * sin(M_PI * x);
+}
+
 funcoes funcao[] {
-  f1, f2, f3, f4
+  f1, f2, f3, f4, f5, f6, f7, f8
 };
