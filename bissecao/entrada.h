@@ -1,3 +1,5 @@
+#define PRECISAO -309
+
 typedef struct{
   double a, b;
   int m;
@@ -13,8 +15,8 @@ tipoEntrada entradas[] = {
 
    1.0,  2.0, 5,
    0.0,  1.0, 6,
-   1.0,  2.0, 7, //Problema
-   2.0,  4.0, 7, //Problema
-   0.0,  0.5, 8, //Problema
-   0.5,  0.1, 8  //Problema
+   1.0,  2.0, 7,
+   2.0,  4.0, 7,
+   0.0,  0.5, 8,
+   0.5,  1.0, 8
 };

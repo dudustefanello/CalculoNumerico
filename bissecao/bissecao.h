@@ -1,7 +1,5 @@
 #include "funcoes.h"
 
-#define PRECISAO -5
-
 int sinal(double y){
   if (y < 0) return -1;
   if (y > 0) return 1;
@@ -17,6 +15,7 @@ double bissecao(double b, double a, double (*funcao)(double)) {
   double c;
 
   int n = iteracoes(a, b);
+  printf("n= %d\n", n);
 
   for (int i = 0; i <= n; i++) {
     c = a + (b - a) / 2;

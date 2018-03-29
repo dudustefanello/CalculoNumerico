@@ -30,7 +30,7 @@ double f6(double x){
 }
 
 double f7(double x){
-  return /*pow(x, 3) - 4 * x + 4 - */log(x);
+  return pow(x, 2) - 4 * x + 4 - log(x);
 }
 
 double f8(double x){
