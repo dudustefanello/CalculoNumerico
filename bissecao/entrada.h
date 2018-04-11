@@ -1,4 +1,4 @@
-#define PRECISAO -309
+#define PRECISAO -5
 
 typedef struct{
   double a, b;
