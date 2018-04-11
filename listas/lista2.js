@@ -1,16 +1,26 @@
-function abs (ap, ex){
-	return Math.abs(ap - ex);
+/*
+ * Retorna o valor do erro absoluto, dado um valor aproximado e um valor exato.
+ */
+function absoluto (aprox, exato){
+	return Math.abs(aprox - exato);
 }
 
-function rel (ap, ex){
-	return Math.abs(abs(ap, ex)/ex);
+/*
+ * Retorna o valor do erro relativo, dado um valor aproximado e um valor exato.
+ */
+function relativo (aprox, exato){
+	return Math.abs(absoluto(aprox, exato) / exato);
 }
 
-function res2 (p) {
+/*
+ * Determine o maior intervalo no qual p* deve deve estar contido a fim de
+ * aproximar p com erro relativo de no máximo 10^-4 para a entrada p
+ */
+function resposta2 (p) {
 	i = 0;
 	while(1){
 		i += 0.0001;
-		if(rel(p, p + i) > 0.0001){
+		if(relativo(p, p + i) > 0.0001){
 			i -= 0.0001;
 			break;
 		}
@@ -19,7 +29,10 @@ function res2 (p) {
 	console.log(i);
 }
 
-function res4 (i, ii, iii){
-	console.log('Truncamento   : '+rel(i, ii));
-	console.log('Arredondamento: '+rel(i, iii));
+/*
+ * Efetue os cálculos de erro relativo para entradas truncadas e arrendondadas
+ */
+function resposta4 (exato, trunc, arred){
+	console.log('Truncamento   : ' + relativo(i, ii));
+	console.log('Arredondamento: ' + relativo(i, iii));
 }
