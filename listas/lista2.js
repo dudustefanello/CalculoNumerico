@@ -33,6 +33,6 @@ function resposta2 (p) {
  * Efetue os cálculos de erro relativo para entradas truncadas e arrendondadas
  */
 function resposta4 (exato, trunc, arred){
-	console.log('Truncamento   : ' + relativo(i, ii));
-	console.log('Arredondamento: ' + relativo(i, iii));
+	console.log('Truncamento   : ' + relativo(exato, trunc));
+	console.log('Arredondamento: ' + relativo(exato, arred));
 }
