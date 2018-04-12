@@ -15,7 +15,7 @@ double bissecao(double b, double a, double (*funcao)(double)) {
   double c;
 
   int n = iteracoes(a, b);
-  printf("n= %d\n", n);
+  printf("%d Iteracoes\n", n);
 
   for (int i = 0; i <= n; i++) {
     c = a + (b - a) / 2;
