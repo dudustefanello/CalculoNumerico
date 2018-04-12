@@ -17,6 +17,5 @@ int main(int argc, char const *argv[]) {
   for (auto &i: entradas)
     imprimir(i.a, i.b, i.m);
 
-  //system("pause");
   return 0;
 }
