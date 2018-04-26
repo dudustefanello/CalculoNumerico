@@ -1,11 +1,8 @@
+#include "entrada.h"
 #include <iostream>
 
 #define _USE_MATH_DEFINES
-
 #include <cmath>
-#include <math.h>
-
-#include "entrada.h"
 
 typedef double (*funcoes)(double x);
 
@@ -41,6 +38,6 @@ double f8(double x){
   return x + 1 - 2 * sin(M_PI * x);
 }
 
-funcoes funcao[] {
+funcoes funcao[] = {
   f1, f2, f3, f4, f5, f6, f7, f8
 };

@@ -1,30 +1,32 @@
-//#include "ponto-fixo.h"
-#define _USE_MATH_DEFINES
-
-#include <iostream>
-#include <cmath>
+#include "funcoes.h"
 
 using namespace std;
 
+
 double f1(double x){
-  return -sqrt(pow(M_E, x));
+  return cos(x);
+}
+funcoes funcao[] = {
+  f1
+};
+
+double executar(double x, int f){
+  double y;
+  while (1) {
+    y = funcao[f - 1](x);
+    if (abs((y - x) / y) < EPSON) break;
+    x = y;
+  }
+  return y;
 }
 
-double f2(double x){
-  return pow(x, 2)-pow(M_E, x);
+void imprimir(double x0, int f, char original[]){
+  executar(x0, f);
+
+  printf("%lf\n", funcao[f - 1](x0));
 }
 
 int main(int argc, char const *argv[]) {
-  // printf("%lf\n", f2(-1));
-  // printf("%lf\n", M_E);
-
-  double x = -1;
-
-  for (int i = 0; i < 10; i++) {
-    printf("%lf\n", f1(x));
-    x = f1(x);
-  }
-
-
-  return 0;
+ for (auto &i: entradas)
+    imprimir(i.x0, i.f, i.original);
 }

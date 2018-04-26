@@ -1,8 +1,8 @@
-#define PRECISAO -5
+#define EPSON -5
 
 typedef struct{
   double a, b;
-  int m;
+  int f;
 }tipoEntrada;
 
 tipoEntrada entradas[] = {
