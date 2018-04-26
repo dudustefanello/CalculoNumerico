@@ -1,4 +1,4 @@
-#define EPSON -5
+#define EPSON 0.00001
 
 typedef struct{
   double a, b;

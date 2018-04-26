@@ -1,5 +1,10 @@
 
 *.exe
+
 bissecao/funcoes
+bissecao/entrada
 bissecao/main
+
+ponto-fixo/main
+
 compiling_error.txt

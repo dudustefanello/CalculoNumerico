@@ -6,4 +6,10 @@
 
 typedef double (*funcoes)(double x);
 
-double y;
+double f1(double x){
+  return cos(x);
+}
+
+funcoes funcao[] = {
+  f1
+};

@@ -7,7 +7,7 @@ int sinal(double y){
 }
 
 int iteracoes(double b, double a){
-  return ceil((log10(b - a) - log10(pow(10, EPSON))) / log10(2));
+  return ceil((log10(b - a) - log10(EPSON)) / log10(2));
 }
 
 double bissecao(double b, double a, double (*funcao)(double)) {

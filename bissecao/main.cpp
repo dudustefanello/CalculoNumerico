@@ -2,20 +2,17 @@
 
 using namespace std;
 
-void imprimir(double a, double b, int f){
+void imprimir(tipoEntrada i){
 
-  printf("Funcao %d: ", f);
-  double y = bissecao(a, b, funcao[f - 1]);
+  printf("Funcao %d: \n", i.f);
+  double y = bissecao(i.a, i.b, funcao[i.f - 1]);
 
   printf("x    = %.8lf\n", y);
-  printf("f(x) = %.8lf\n", funcao[f - 1](y));
-  printf("Intervalo: [%.1lf, %.1lf]\n\n", a, b);
+  printf("f(x) = %.8lf\n", funcao[i.f - 1](y));
+  printf("Intervalo: [%.1lf, %.1lf]\n\n", i.a, i.b);
 }
 
 int main(int argc, char const *argv[]) {
-
-  for (auto &i: entradas)
-    imprimir(i.a, i.b, i.f);
-
+  for (auto &i: entradas) imprimir(i);
   return 0;
 }
