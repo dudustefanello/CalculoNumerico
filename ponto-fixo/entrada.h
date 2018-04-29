@@ -7,5 +7,6 @@ typedef struct{
 }tipoEntrada;
 
 tipoEntrada entradas[] = {
-  0.7, 1, "f(x) = cos(x) - x"
+  0, 1, "f(x) = x^2 + 10cos(x)",
+  -3, 1, "f(x) = x^2 + 10cos(x)",
 };

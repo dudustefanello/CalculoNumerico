@@ -6,7 +6,9 @@ bissecao/entrada
 bissecao/main
 
 ponto-fixo/main
+ponto-fixo/entrada
 
 newton/main
+newton/newton
 
 compiling_error.txt

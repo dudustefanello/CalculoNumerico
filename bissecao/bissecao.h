@@ -17,7 +17,7 @@ double bissecao(double b, double a, double (*funcao)(double)) {
   int n = iteracoes(a, b);
   printf("%d Iteracoes\n", n);
 
-  for (int i = 0; i <= n; i++) {
+  for (int i = 0; i <= n*2; i++) {
     c = a + (b - a) / 2;
 
     if (sinal(funcao(a)) * sinal(funcao(c)) < 0) b = c;
