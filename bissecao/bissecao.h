@@ -1,8 +1,13 @@
 #include "funcoes.h"
 
-int sinal(double y){
-  if (y < 0) return -1;
-  if (y > 0) return 1;
+typedef struct retorno{
+  double y, erro;
+  int iteracoes;
+}retorno;
+
+int sinal(double x1, double x2){
+  if (x1 * x2 < 0) return -1;
+  if (x1 * x2 > 0) return 1;
   return 0;
 }
 
@@ -10,19 +15,15 @@ int iteracoes(double b, double a){
   return ceil((log10(b - a) - log10(EPSON)) / log10(2));
 }
 
-double bissecao(double b, double a, double (*funcao)(double)) {
+retorno bissecao1(double b, double a, double (*funcao)(double)) {
+  retorno ret;
 
-  double c;
+  ret.iteracoes = iteracoes(a, b);
 
-  int n = iteracoes(a, b);
-  printf("%d Iteracoes\n", n);
-
-  for (int i = 0; i <= n*2; i++) {
-    c = a + (b - a) / 2;
-
-    if (sinal(funcao(a)) * sinal(funcao(c)) < 0) b = c;
-    else a = c;
+  for (int i = 0; i <= ret.iteracoes; i++) {
+    ret.y = a + (b - a) / 2;
+    if (sinal(funcao(a), funcao(ret.y)) <= 0) b = ret.y;
+    else a = ret.y;
   }
-
-  return c;
+  return ret;
 }

@@ -6,6 +6,5 @@ typedef struct{
 }tipoEntrada;
 
 tipoEntrada entradas[] = {
-   0.16,  0.18, 1,
-   // 1.5614,  1.5615, 2
+   0.0,  0.5, 1,
 };
