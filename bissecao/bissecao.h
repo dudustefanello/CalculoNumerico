@@ -5,7 +5,11 @@ typedef struct retorno{
   int iteracoes;
 }retorno;
 
-typedef retorno (*bissecoes)(double a, double b, double (*funcao)(double));
+typedef struct bissecao{
+  int i;
+  retorno (*metodo)(double a, double b, double (*funcao)(double));
+  char desc[100];
+}bissecao;
 
 int sinal(double x1, double x2){
   if (x1 * x2 < 0) return -1;
@@ -61,6 +65,7 @@ retorno bissecaoErro(double a, double b, double (*funcao)(double)) {
   return ret;
 }
 
-bissecoes bissecao[] = {
-  bissecaoEstimativa, bissecaoErro
+bissecao bissecoes[] = {
+  0, bissecaoEstimativa, "Com estimativa de iteracoes",
+  1, bissecaoErro, "Com cálculo de erro por iteracao"
 };

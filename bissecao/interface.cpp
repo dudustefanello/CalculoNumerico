@@ -4,7 +4,7 @@ using namespace std;
 
 void imprimirFuncoes(){
   printf("Funções Implementadas:\n");
-  for (auto &i: entradas) printf("%2d. %s\n", i.f - 1, i.desc);
+  for (auto &i: entradas) printf("%2d. %s\n", i.f, i.desc);
 }
 
 int escolhaFuncao(){
@@ -36,21 +36,21 @@ void escolhaIntervalo(double *a, double *b, int f){
 int escolhaMetodo(){
   int ret;
   printf("\nEscolha um Criterio de Parada:\n");
-  printf("0. Cálculo da Estimativa antes da Execucao.\n");
-  printf("1. Verificação do Erro nas Iteracoes.\n>");
+  for (auto &i: bissecoes) printf("%d. %s\n", i.i, i.desc);
   scanf("%d", &ret);
+  printf("\n");
   return ret;
 }
 
-void imprimirResultado(int f, double a, double b, int metodo){
-  retorno ret = bissecao[metodo](entradas[f].a, entradas[f].b, funcao[entradas[f].f - 1]);
+void imprimirResultado(int f, double a, double b, int m){
+  retorno ret = bissecoes[m].metodo(entradas[f].a, entradas[f].b, funcao[entradas[f].f]);
 
   printf("Funcao %d: \n", entradas[f].f);
   printf("Intervalo: [%.3lf, %.3lf]\n", entradas[f].a, entradas[f].b);
   printf("Iteracoes: %d\n\n", ret.iteracoes);
 
   printf("x    = %.8lf\n", ret.y);
-  printf("f(x) = %.8lf\n", funcao[entradas[f].f - 1](ret.y));
+  printf("f(x) = %.8lf\n", funcao[entradas[f].f](ret.y));
   printf("Erro = %.8lf\n\n", ret.erro);
 }
 
