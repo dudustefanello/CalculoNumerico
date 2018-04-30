@@ -47,8 +47,7 @@ void imprimirResultado(int f, double a, double b, int m){
 
   printf("Funcao %d: \n", entradas[f].f);
   printf("Intervalo: [%.3lf, %.3lf]\n", entradas[f].a, entradas[f].b);
-  printf("Iteracoes: %d\n\n", ret.iteracoes);
-
+  printf("Iteracoes: %d\n", ret.iteracoes);
   printf("x    = %.8lf\n", ret.y);
   printf("f(x) = %.8lf\n", funcoes[entradas[f].f].funcao(ret.y));
   printf("Erro = %.8lf\n\n", ret.erro);

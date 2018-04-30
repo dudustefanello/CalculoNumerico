@@ -5,6 +5,7 @@
 #include <cmath>
 
 typedef struct funcao{
+  int i;
   double (*funcao)(double x);
   char desc[100];
 }funcao;
@@ -19,6 +20,6 @@ double f2(double x){
 }
 
 funcao funcoes[] = {
-  f1, "f(x) = L * ((0.5 * PI) - arcsin(h) - h * pow((1 - h * h), 1/2)) - V",
-  f2, "f(x) = x^2 + ln(x)"
+  0, f1, "f(x) = L * ((0.5 * PI) - arcsin(h) - h * pow((1 - h * h), 1/2)) - V",
+  1, f2, "f(x) = x^2 + ln(x)"
 };
