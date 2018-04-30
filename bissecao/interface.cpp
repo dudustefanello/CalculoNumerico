@@ -4,7 +4,7 @@ using namespace std;
 
 void imprimirFuncoes(){
   printf("Funções Implementadas:\n");
-  for (auto &i: entradas) printf("%2d. %s\n", i.f, i.desc);
+  for (auto &i: entradas) printf("%2d. %s\n", i.f, funcoes[i.f].desc);
 }
 
 int escolhaFuncao(){
@@ -43,14 +43,14 @@ int escolhaMetodo(){
 }
 
 void imprimirResultado(int f, double a, double b, int m){
-  retorno ret = bissecoes[m].metodo(entradas[f].a, entradas[f].b, funcao[entradas[f].f]);
+  retorno ret = bissecoes[m].metodo(entradas[f].a, entradas[f].b, funcoes[entradas[f].f].funcao);
 
   printf("Funcao %d: \n", entradas[f].f);
   printf("Intervalo: [%.3lf, %.3lf]\n", entradas[f].a, entradas[f].b);
   printf("Iteracoes: %d\n\n", ret.iteracoes);
 
   printf("x    = %.8lf\n", ret.y);
-  printf("f(x) = %.8lf\n", funcao[entradas[f].f](ret.y));
+  printf("f(x) = %.8lf\n", funcoes[entradas[f].f].funcao(ret.y));
   printf("Erro = %.8lf\n\n", ret.erro);
 }
 
