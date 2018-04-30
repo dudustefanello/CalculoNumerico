@@ -1,9 +1,5 @@
 #include "funcoes.h"
-
-typedef struct retorno{
-  double y, erro;
-  int iteracoes;
-}retorno;
+#include "../comum.h"
 
 typedef struct bissecao{
   int i;
@@ -15,10 +11,6 @@ int sinal(double x1, double x2){
   if (x1 * x2 < 0) return -1;
   if (x1 * x2 > 0) return 1;
   return 0;
-}
-
-double erro(double a, double b){
-  return fabs((a - b) / a);
 }
 
 int iteracoes(double a, double b){

@@ -7,8 +7,10 @@ bissecao/funcoes
 bissecao/entrada
 bissecao/main
 
-ponto-fixo/main
+ponto-fixo/ponto-fixo
+ponto-fixo/funcoes
 ponto-fixo/entrada
+ponto-fixo/main
 
 newton/main
 newton/newton
