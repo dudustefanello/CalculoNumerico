@@ -1,9 +1,10 @@
 
 *.exe
 
+bissecao/interface
+bissecao/bissecao
 bissecao/funcoes
 bissecao/entrada
-bissecao/bissecao
 bissecao/main
 
 ponto-fixo/main
