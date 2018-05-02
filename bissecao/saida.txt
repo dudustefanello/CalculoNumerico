@@ -1,0 +1,466 @@
+Epson: 0.000010
+
+Funcao 0: (f(x) = sqrt(x) - cos(x))
+Metodo: Com estimativa de iteracoes)
+Intervalo: [0.000, 1.000]
+Iteracoes: 16
+x    = 0.64171600
+f(x) = 0.00000200
+Erro = 0.00001189
+
+Funcao 0: (f(x) = sqrt(x) - cos(x))
+Metodo: Com cálculo de erro por iteracao)
+Intervalo: [0.000, 1.000]
+Iteracoes: 15
+x    = 0.64170837
+f(x) = -0.00000733
+Erro = 0.00002378
+
+Funcao 1: (f(x) = 3(x + 1)(x - 1/2)(x - 1))
+Metodo: Com estimativa de iteracoes)
+Intervalo: [-2.000, 1.500]
+Iteracoes: 18
+x    = -0.99999714
+f(x) = 0.00002575
+Erro = 0.00000668
+
+Funcao 1: (f(x) = 3(x + 1)(x - 1/2)(x - 1))
+Metodo: Com cálculo de erro por iteracao)
+Intervalo: [-2.000, 1.500]
+Iteracoes: 19
+x    = -1.00000048
+f(x) = -0.00000429
+Erro = 0.00000334
+
+Funcao 1: (f(x) = 3(x + 1)(x - 1/2)(x - 1))
+Metodo: Com estimativa de iteracoes)
+Intervalo: [-2.000, 1.500]
+Iteracoes: 18
+x    = -0.99999714
+f(x) = 0.00002575
+Erro = 0.00000668
+
+Funcao 1: (f(x) = 3(x + 1)(x - 1/2)(x - 1))
+Metodo: Com cálculo de erro por iteracao)
+Intervalo: [-2.000, 1.500]
+Iteracoes: 19
+x    = -1.00000048
+f(x) = -0.00000429
+Erro = 0.00000334
+
+Funcao 2: (f(x) = x^4 - 2x^3 - 4x^2 + 4x + 4)
+Metodo: Com estimativa de iteracoes)
+Intervalo: [-2.000, -1.000]
+Iteracoes: 16
+x    = -1.41420746
+f(x) = -0.00004883
+Erro = 0.00000539
+
+Funcao 2: (f(x) = x^4 - 2x^3 - 4x^2 + 4x + 4)
+Metodo: Com cálculo de erro por iteracao)
+Intervalo: [-2.000, -1.000]
+Iteracoes: 17
+x    = -1.41421127
+f(x) = -0.00001831
+Erro = 0.00000270
+
+Funcao 2: (f(x) = x^4 - 2x^3 - 4x^2 + 4x + 4)
+Metodo: Com estimativa de iteracoes)
+Intervalo: [0.000, 2.000]
+Iteracoes: 17
+x    = 1.41420746
+f(x) = 0.00004883
+Erro = 0.00000539
+
+Funcao 2: (f(x) = x^4 - 2x^3 - 4x^2 + 4x + 4)
+Metodo: Com cálculo de erro por iteracao)
+Intervalo: [0.000, 2.000]
+Iteracoes: 1
+x    = 1.50000000
+f(x) = -0.68750000
+Erro = 0.33333333
+
+Funcao 2: (f(x) = x^4 - 2x^3 - 4x^2 + 4x + 4)
+Metodo: Com estimativa de iteracoes)
+Intervalo: [2.000, 3.000]
+Iteracoes: 16
+x    = 2.73204803
+f(x) = -0.00005249
+Erro = 0.00000279
+
+Funcao 2: (f(x) = x^4 - 2x^3 - 4x^2 + 4x + 4)
+Metodo: Com cálculo de erro por iteracao)
+Intervalo: [2.000, 3.000]
+Iteracoes: 16
+x    = 2.73204803
+f(x) = -0.00005249
+Erro = 0.00000279
+
+Funcao 2: (f(x) = x^4 - 2x^3 - 4x^2 + 4x + 4)
+Metodo: Com estimativa de iteracoes)
+Intervalo: [-1.000, 0.000]
+Iteracoes: 16
+x    = -0.73204803
+f(x) = 0.00001406
+Erro = 0.00001042
+
+Funcao 2: (f(x) = x^4 - 2x^3 - 4x^2 + 4x + 4)
+Metodo: Com cálculo de erro por iteracao)
+Intervalo: [-1.000, 0.000]
+Iteracoes: 17
+x    = -0.73205185
+f(x) = -0.00000528
+Erro = 0.00000521
+
+Funcao 3: (f(x) = x^3 - 7x^2 + 14x - 6)
+Metodo: Com estimativa de iteracoes)
+Intervalo: [0.000, 1.000]
+Iteracoes: 16
+x    = 0.58579254
+f(x) = 0.00004168
+Erro = 0.00001302
+
+Funcao 3: (f(x) = x^3 - 7x^2 + 14x - 6)
+Metodo: Com cálculo de erro por iteracao)
+Intervalo: [0.000, 1.000]
+Iteracoes: 18
+x    = 0.58578682
+f(x) = 0.00000261
+Erro = 0.00000326
+
+Funcao 3: (f(x) = x^3 - 7x^2 + 14x - 6)
+Metodo: Com estimativa de iteracoes)
+Intervalo: [1.000, 3.200]
+Iteracoes: 17
+x    = 3.00000229
+f(x) = -0.00000229
+Erro = 0.00000280
+
+Funcao 3: (f(x) = x^3 - 7x^2 + 14x - 6)
+Metodo: Com cálculo de erro por iteracao)
+Intervalo: [1.000, 3.200]
+Iteracoes: 14
+x    = 2.99999390
+f(x) = 0.00000610
+Erro = 0.00002238
+
+Funcao 3: (f(x) = x^3 - 7x^2 + 14x - 6)
+Metodo: Com estimativa de iteracoes)
+Intervalo: [3.200, 4.000]
+Iteracoes: 16
+x    = 3.41421509
+f(x) = 0.00000179
+Erro = 0.00000179
+
+Funcao 3: (f(x) = x^3 - 7x^2 + 14x - 6)
+Metodo: Com cálculo de erro por iteracao)
+Intervalo: [3.200, 4.000]
+Iteracoes: 13
+x    = 3.41420898
+f(x) = -0.00000536
+Erro = 0.00001430
+
+Funcao 4: (f(x) = x - x^-2)
+Metodo: Com estimativa de iteracoes)
+Intervalo: [0.000, 1.000]
+Iteracoes: 16
+x    = 0.64118195
+f(x) = -0.00000549
+Erro = 0.00001190
+
+Funcao 4: (f(x) = x - x^-2)
+Metodo: Com cálculo de erro por iteracao)
+Intervalo: [0.000, 1.000]
+Iteracoes: 15
+x    = 0.64118958
+f(x) = 0.00000553
+Erro = 0.00002380
+
+Funcao 5: (f(x) = e^x - x^2 + 3x - 2)
+Metodo: Com estimativa de iteracoes)
+Intervalo: [0.000, 1.000]
+Iteracoes: 16
+x    = 0.25753021
+f(x) = -0.00000028
+Erro = 0.00002963
+
+Funcao 5: (f(x) = e^x - x^2 + 3x - 2)
+Metodo: Com cálculo de erro por iteracao)
+Intervalo: [0.000, 1.000]
+Iteracoes: 16
+x    = 0.25753021
+f(x) = -0.00000028
+Erro = 0.00002963
+
+Funcao 6: (f(x) = 2xcos(2x) - (x + 1)^2)
+Metodo: Com estimativa de iteracoes)
+Intervalo: [-3.000, -2.000]
+Iteracoes: 16
+x    = -2.19130707
+f(x) = 0.00000947
+Erro = 0.00000348
+
+Funcao 6: (f(x) = 2xcos(2x) - (x + 1)^2)
+Metodo: Com cálculo de erro por iteracao)
+Intervalo: [-3.000, -2.000]
+Iteracoes: 16
+x    = -2.19130707
+f(x) = 0.00000947
+Erro = 0.00000348
+
+Funcao 6: (f(x) = 2xcos(2x) - (x + 1)^2)
+Metodo: Com estimativa de iteracoes)
+Intervalo: [-1.000, 0.000]
+Iteracoes: 16
+x    = -0.79816437
+f(x) = 0.00001607
+Erro = 0.00000956
+
+Funcao 6: (f(x) = 2xcos(2x) - (x + 1)^2)
+Metodo: Com cálculo de erro por iteracao)
+Intervalo: [-1.000, 0.000]
+Iteracoes: 17
+x    = -0.79816055
+f(x) = 0.00000216
+Erro = 0.00000478
+
+Funcao 7: (f(x) = xcos(x) - 2x^2 - 3x - 1)
+Metodo: Com estimativa de iteracoes)
+Intervalo: [0.200, 0.300]
+Iteracoes: 13
+x    = 0.29752808
+f(x) = -0.00000578
+Erro = 0.00002051
+
+Funcao 7: (f(x) = xcos(x) - 2x^2 - 3x - 1)
+Metodo: Com cálculo de erro por iteracao)
+Intervalo: [0.200, 0.300]
+Iteracoes: 13
+x    = 0.29752808
+f(x) = -0.00000578
+Erro = 0.00002051
+
+Funcao 7: (f(x) = xcos(x) - 2x^2 - 3x - 1)
+Metodo: Com estimativa de iteracoes)
+Intervalo: [1.200, 1.300]
+Iteracoes: 13
+x    = 1.25662231
+f(x) = 0.00000294
+Erro = 0.00000486
+
+Funcao 7: (f(x) = xcos(x) - 2x^2 - 3x - 1)
+Metodo: Com cálculo de erro por iteracao)
+Intervalo: [1.200, 1.300]
+Iteracoes: 13
+x    = 1.25662231
+f(x) = 0.00000294
+Erro = 0.00000486
+
+Funcao 8: (f(x) = 3x - e^x)
+Metodo: Com estimativa de iteracoes)
+Intervalo: [1.000, 2.000]
+Iteracoes: 16
+x    = 1.51213837
+f(x) = -0.00000586
+Erro = 0.00000505
+
+Funcao 8: (f(x) = 3x - e^x)
+Metodo: Com cálculo de erro por iteracao)
+Intervalo: [1.000, 2.000]
+Iteracoes: 15
+x    = 1.51213074
+f(x) = 0.00000586
+Erro = 0.00001009
+
+Funcao 9: (f(x) = x + 3cos(x) - e^x)
+Metodo: Com estimativa de iteracoes)
+Intervalo: [0.000, 1.000]
+Iteracoes: 16
+x    = 0.97676849
+f(x) = 0.00001874
+Erro = 0.00000781
+
+Funcao 9: (f(x) = x + 3cos(x) - e^x)
+Metodo: Com cálculo de erro por iteracao)
+Intervalo: [0.000, 1.000]
+Iteracoes: 17
+x    = 0.97677231
+f(x) = 0.00000294
+Erro = 0.00000391
+
+Funcao 10: (f(x) = x^2 - 4x + 4 - ln(x))
+Metodo: Com estimativa de iteracoes)
+Intervalo: [1.000, 2.000]
+Iteracoes: 16
+x    = 1.41239166
+f(x) = -0.00000092
+Erro = 0.00000540
+
+Funcao 10: (f(x) = x^2 - 4x + 4 - ln(x))
+Metodo: Com cálculo de erro por iteracao)
+Intervalo: [1.000, 2.000]
+Iteracoes: 16
+x    = 1.41239166
+f(x) = -0.00000092
+Erro = 0.00000540
+
+Funcao 10: (f(x) = x^2 - 4x + 4 - ln(x))
+Metodo: Com estimativa de iteracoes)
+Intervalo: [2.000, 4.000]
+Iteracoes: 17
+x    = 3.05710602
+f(x) = 0.00000441
+Erro = 0.00000250
+
+Funcao 10: (f(x) = x^2 - 4x + 4 - ln(x))
+Metodo: Com cálculo de erro por iteracao)
+Intervalo: [2.000, 4.000]
+Iteracoes: 15
+x    = 3.05709839
+f(x) = -0.00000922
+Erro = 0.00000998
+
+Funcao 11: (f(x) = x + 1 - 2sen(PIx))
+Metodo: Com estimativa de iteracoes)
+Intervalo: [0.000, 0.500]
+Iteracoes: 15
+x    = 0.20603180
+f(x) = 0.00001332
+Erro = 0.00003703
+
+Funcao 11: (f(x) = x + 1 - 2sen(PIx))
+Metodo: Com cálculo de erro por iteracao)
+Intervalo: [0.000, 0.500]
+Iteracoes: 16
+x    = 0.20603561
+f(x) = -0.00000198
+Erro = 0.00001851
+
+Funcao 11: (f(x) = x + 1 - 2sen(PIx))
+Metodo: Com estimativa de iteracoes)
+Intervalo: [0.500, 1.000]
+Iteracoes: 15
+x    = 0.68196869
+f(x) = -0.00002692
+Erro = 0.00001119
+
+Funcao 11: (f(x) = x + 1 - 2sen(PIx))
+Metodo: Com cálculo de erro por iteracao)
+Intervalo: [0.500, 1.000]
+Iteracoes: 13
+x    = 0.68197632
+f(x) = 0.00000664
+Erro = 0.00004475
+
+Funcao 12: (p(x) = 2sen(x) - x)
+Metodo: Com estimativa de iteracoes)
+Intervalo: [1.000, 2.000]
+Iteracoes: 16
+x    = 1.89550018
+f(x) = -0.00000969
+Erro = 0.00000403
+
+Funcao 12: (p(x) = 2sen(x) - x)
+Metodo: Com cálculo de erro por iteracao)
+Intervalo: [1.000, 2.000]
+Iteracoes: 15
+x    = 1.89549255
+f(x) = 0.00000281
+Erro = 0.00000805
+
+Funcao 13: (f(x) = (x+2)(x+1)^3*x(x-1)^2(x-2))
+Metodo: Com estimativa de iteracoes)
+Intervalo: [-1.500, 2.500]
+Iteracoes: 18
+x    = 2.49999237
+f(x) = 542.61679451
+Erro = 0.00000305
+
+Funcao 13: (f(x) = (x+2)(x+1)^3*x(x-1)^2(x-2))
+Metodo: Com cálculo de erro por iteracao)
+Intervalo: [-1.500, 2.500]
+Iteracoes: 2
+x    = 2.00000000
+f(x) = 0.00000000
+Erro = 0.25000000
+
+Funcao 13: (f(x) = (x+2)(x+1)^3*x(x-1)^2(x-2))
+Metodo: Com estimativa de iteracoes)
+Intervalo: [-0.500, 2.400]
+Iteracoes: 18
+x    = 0.00000286
+f(x) = -0.00001144
+Erro = 1.93333333
+
+Funcao 13: (f(x) = (x+2)(x+1)^3*x(x-1)^2(x-2))
+Metodo: Com cálculo de erro por iteracao)
+Intervalo: [-0.500, 2.400]
+Iteracoes: 19
+x    = 0.00000010
+f(x) = -0.00000038
+Erro = 29.00000000
+
+Funcao 13: (f(x) = (x+2)(x+1)^3*x(x-1)^2(x-2))
+Metodo: Com estimativa de iteracoes)
+Intervalo: [-0.500, 3.000]
+Iteracoes: 18
+x    = 0.00000477
+f(x) = -0.00001907
+Erro = 1.40000000
+
+Funcao 13: (f(x) = (x+2)(x+1)^3*x(x-1)^2(x-2))
+Metodo: Com cálculo de erro por iteracao)
+Intervalo: [-0.500, 3.000]
+Iteracoes: 17
+x    = -0.00000191
+f(x) = 0.00000763
+Erro = 7.00000000
+
+Funcao 13: (f(x) = (x+2)(x+1)^3*x(x-1)^2(x-2))
+Metodo: Com estimativa de iteracoes)
+Intervalo: [-3.000, -0.500]
+Iteracoes: 17
+x    = -2.00000572
+f(x) = 0.00041200
+Erro = 0.00000477
+
+Funcao 13: (f(x) = (x+2)(x+1)^3*x(x-1)^2(x-2))
+Metodo: Com cálculo de erro por iteracao)
+Intervalo: [-3.000, -0.500]
+Iteracoes: 17
+x    = -2.00000572
+f(x) = 0.00041200
+Erro = 0.00000477
+
+Funcao 14: (f(x) = x^2 - 3)
+Metodo: Com estimativa de iteracoes)
+Intervalo: [1.000, 2.000]
+Iteracoes: 16
+x    = 1.73204803
+f(x) = -0.00000961
+Erro = 0.00000440
+
+Funcao 14: (f(x) = x^2 - 3)
+Metodo: Com cálculo de erro por iteracao)
+Intervalo: [1.000, 2.000]
+Iteracoes: 16
+x    = 1.73204803
+f(x) = -0.00000961
+Erro = 0.00000440
+
+Funcao 15: (f(h) = L * ((0.5 * PI) - arcsin(h) - h * (1 - h^2)^(1/2)) - V)
+Metodo: Com estimativa de iteracoes)
+Intervalo: [0.000, 0.500]
+Iteracoes: 15
+x    = 0.16616058
+f(x) = 0.00010751
+Erro = 0.00004592
+
+Funcao 15: (f(h) = L * ((0.5 * PI) - arcsin(h) - h * (1 - h^2)^(1/2)) - V)
+Metodo: Com cálculo de erro por iteracao)
+Intervalo: [0.000, 0.500]
+Iteracoes: 17
+x    = 0.16616631
+f(x) = -0.00000534
+Erro = 0.00001148
+

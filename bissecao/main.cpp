@@ -6,7 +6,7 @@ void imprimir(tipoEntrada i, bissecao j){
   retorno ret = j.metodo(i.a, i.b, funcoes[i.f].funcao);
 
   printf("Funcao %d: (%s)\n", i.f, funcoes[i.f].desc);
-  printf("Método: %s)\n", j.desc);
+  printf("Metodo: %s)\n", j.desc);
   printf("Intervalo: [%.3lf, %.3lf]\n", i.a, i.b);
   printf("Iteracoes: %d\n", ret.iteracoes);
   printf("x    = %.8lf\n", ret.y);
