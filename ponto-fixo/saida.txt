@@ -1,0 +1,6 @@
+Fi 1 ( ): 
+Original:  
+x = 0.73908230
+Iteracoes: 28
+Erro: 0.00000953
+
