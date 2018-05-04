@@ -1,11 +1,19 @@
 #define EPSON 0.00001
 
 typedef struct{
-  double x0;
   int f;
-  char original[50];
+  double x0;
 }tipoEntrada;
 
 tipoEntrada entradas[] = {
-  0.7, 1, "f(x) = cos(x) - x"
+// Função - Chute Inicial
+  // 0, 0,
+  // 1, 0,
+  // 2, 6,
+  // 3, 6,
+  // 4, 6,
+  // 5, 2
+  // 7, 2,
+  // 8, 2,
+  9, 5000000,
 };

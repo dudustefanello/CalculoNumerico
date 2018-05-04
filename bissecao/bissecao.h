@@ -1,28 +1,63 @@
 #include "funcoes.h"
+#include "../comum.h"
 
-int sinal(double y){
-  if (y < 0) return -1;
-  if (y > 0) return 1;
+typedef struct bissecao{
+  int i;
+  retorno (*metodo)(double a, double b, double (*funcao)(double));
+  char desc[100];
+}bissecao;
+
+int sinal(double x1, double x2){
+  if (x1 * x2 < 0) return -1;
+  if (x1 * x2 > 0) return 1;
   return 0;
 }
 
-int iteracoes(double b, double a){
-  return ceil((log10(b - a) - log10(EPSON)) / log10(2));
+int iteracoes(double a, double b){
+  return ceil((log10(b - a) - log10(EPSON)) / log10(2)) - 1;
 }
 
-double bissecao(double b, double a, double (*funcao)(double)) {
+retorno bissecaoEstimativa(double a, double b, double (*funcao)(double)) {
+  retorno ret;
+  double x;
 
-  double c;
+  ret.y = 1;
+  ret.iteracoes = iteracoes(a, b);
 
-  int n = iteracoes(a, b);
-  printf("%d Iteracoes\n", n);
+  for (int i = 0; i <= ret.iteracoes; i++) {
+    x = ret.y;
+    ret.y = a + (b - a) / 2;
 
-  for (int i = 0; i <= n; i++) {
-    c = a + (b - a) / 2;
+    ret.erro = erro(ret.y, x);
 
-    if (sinal(funcao(a)) * sinal(funcao(c)) < 0) b = c;
-    else a = c;
+    if (sinal(funcao(a), funcao(ret.y)) < 0) b = ret.y;
+    else a = ret.y;
   }
-
-  return c;
+  return ret;
 }
+
+retorno bissecaoErro(double a, double b, double (*funcao)(double)) {
+  retorno ret;
+  double x;
+  int sai = 0;
+
+  ret.y = 1;
+
+  for (ret.iteracoes = 0; 1; ret.iteracoes++) {
+    x = ret.y;
+    ret.y = a + (b - a) / 2;
+    ret.erro = erro(ret.y, x);
+
+    if (fabs(funcao(ret.y)) < EPSON || sai) break;
+    if (ret.erro < EPSON) sai = 1;
+
+    if (sinal(funcao(a), funcao(ret.y)) < 0) b = ret.y;
+    else a = ret.y;
+  }
+  return ret;
+}
+
+bissecao bissecoes[] = {
+  0, bissecaoEstimativa, "Com estimativa de iteracoes",
+  1, bissecaoErro, "Com cálculo de erro por iteracao"
+};
