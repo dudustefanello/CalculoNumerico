@@ -3,11 +3,8 @@
 using namespace std;
 
 void imprimir(tipoEntrada i){
-  retorno ret = executar(i.x0, i.f);
-
-  printf("x = %lf\n", ret.y);
-  printf("Iteracoes: %d\n", ret.iteracoes);
-  printf("Erro: %lf\n\n", ret.erro);
+  printf("Funcao %d: \n", i.f);
+  printf("x = %lf\n", executar(i.x0, i.f));
 }
 
 int main(int argc, char const *argv[]) {

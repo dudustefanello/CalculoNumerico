@@ -1,16 +1,13 @@
 #include "funcoes.h"
-#include "../comum.h"
 
-retorno executar(double x, int f){
-  retorno ret;
-
-  for (ret.iteracoes = 0; ret.iteracoes < 1000; ret.iteracoes++){
-    ret.y = x - f1(x)/d1(x);
-
-    ret.erro = erro(ret.y, x);
-    if (ret.erro < EPSON) break;
-
-    x = ret.y;
+double executar(double x, int f){
+  double y;
+  int i;
+  for (i = 0; 1; i++){
+    y = x - (funcao[f - 1].funcao(x) / funcao[f - 1].derivada(x));
+    if (fabs((y - x) / y) < EPSON)break;
+    x = y;
   }
-  return ret;
+  printf("%d Iteracoes\n", i);
+  return y;
 }

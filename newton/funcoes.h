@@ -1,7 +1,8 @@
 #include "entrada.h"
 #include <iostream>
 
-
+#define _USE_MATH_DEFINES
+#include <cmath>
 
 typedef struct funcoes {
   double (*funcao)(double x);
@@ -9,12 +10,12 @@ typedef struct funcoes {
 }funcoes;
 
 double f1(double x){
-  return 1/2 + (1/4)*x*x - x*sin(x) - (1/2)*cos(2*x);
+  return pow(x, 2) - 2;
 }
 double d1(double x){
-  return x/2 - sin(x) + sin(2*x) + x*(-cos(x));
+  return 2 * x;
 }
 
 funcoes funcao[] = {
-  f1, d1,
+  f1, d1
 };

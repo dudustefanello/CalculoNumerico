@@ -2,22 +2,17 @@
 
 using namespace std;
 
-void imprimir(tipoEntrada i, bissecao j){
-  retorno ret = j.metodo(i.a, i.b, funcoes[i.f].funcao);
+void imprimir(tipoEntrada i){
 
-  printf("Funcao %d: (%s)\n", i.f, funcoes[i.f].desc);
-  printf("Metodo: %s)\n", j.desc);
-  printf("Intervalo: [%.3lf, %.3lf]\n", i.a, i.b);
-  printf("Iteracoes: %d\n", ret.iteracoes);
-  printf("x    = %.8lf\n", ret.y);
-  printf("f(x) = %.8lf\n", funcoes[i.f].funcao(ret.y));
-  printf("Erro = %.8lf\n\n", ret.erro);
+  printf("Funcao %d: \n", i.f);
+  double y = bissecao(i.a, i.b, funcao[i.f - 1]);
+
+  printf("x    = %.8lf\n", y);
+  printf("f(x) = %.8lf\n", funcao[i.f - 1](y));
+  printf("Intervalo: [%.1lf, %.1lf]\n\n", i.a, i.b);
 }
 
 int main(int argc, char const *argv[]) {
-  for (auto &i: entradas)
-    for (auto &j: bissecoes)
-      imprimir(i, j);
-
+  for (auto &i: entradas) imprimir(i);
   return 0;
 }
