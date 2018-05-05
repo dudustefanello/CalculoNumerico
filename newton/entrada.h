@@ -9,5 +9,5 @@ typedef struct{
 }tipoEntrada;
 
 tipoEntrada entradas[] = {
-  M_PI/2, 1
+  1, M_PI/2,
 };

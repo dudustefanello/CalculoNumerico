@@ -1,4 +1,4 @@
-#define EPSON 0.00001
+#define EPSON 0.001
 
 typedef struct{
   int f;

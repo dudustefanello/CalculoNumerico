@@ -1,5 +1,6 @@
 #include <unistd.h>
 #include <signal.h>
+#include <stdio.h>
 #include "bissecao.h"
 
 using namespace std;
@@ -28,7 +29,7 @@ int main(int argc, char const *argv[]) {
 
   fclose(arquivo);
 
-  kill(getppid(), SIGKILL);
+  //kill(getppid(), SIGKILL);
 
   return 0;
 }
