@@ -1,10 +1,12 @@
 
 *.exe
+*.o
 
 bissecao/interface
 bissecao/bissecao
 bissecao/funcoes
 bissecao/entrada
+bissecao/arquivo
 bissecao/main
 
 ponto-fixo/ponto-fixo
