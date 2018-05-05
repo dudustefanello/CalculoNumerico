@@ -8,9 +8,12 @@ typedef struct{
 tipoEntrada entradas[] = {
 // Função - Chute Inicial
   // 0, 0,
-  1, 0,
-  2, 6,
+  // 1, 0,
+  // 2, 6,
   // 3, 6,
   // 4, 6,
   // 5, 2
+  // 7, 2,
+  // 8, 2,
+  9, 5000000,
 };

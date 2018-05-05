@@ -30,7 +30,7 @@ retorno bissecaoEstimativa(double a, double b, double (*funcao)(double)) {
 
     ret.erro = erro(ret.y, x);
 
-    if (sinal(funcao(a), funcao(ret.y)) <= 0) b = ret.y;
+    if (sinal(funcao(a), funcao(ret.y)) < 0) b = ret.y;
     else a = ret.y;
   }
   return ret;
@@ -48,8 +48,8 @@ retorno bissecaoErro(double a, double b, double (*funcao)(double)) {
     ret.y = a + (b - a) / 2;
     ret.erro = erro(ret.y, x);
 
-    if (sai) break;
-    if (fabs(funcao(ret.y)) < EPSON || ret.erro < EPSON) sai = 1;
+    if (fabs(funcao(ret.y)) < EPSON || sai) break;
+    if (ret.erro < EPSON) sai = 1;
 
     if (sinal(funcao(a), funcao(ret.y)) < 0) b = ret.y;
     else a = ret.y;

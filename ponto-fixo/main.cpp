@@ -4,7 +4,7 @@ using namespace std;
 
 void imprimir(tipoEntrada i){
   retorno ret = executar(i.x0, i.f);
-  if (ret.iteracoes == 1000){
+  if (ret.iteracoes == 100){
     printf("Função Fi %d não convergiu\n\n", i.f);
     return;
   }

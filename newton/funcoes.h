@@ -9,12 +9,12 @@ typedef struct funcoes {
 }funcoes;
 
 double f1(double x){
-  return 1/2 + 1/4*x*x - x*sin(x) - 1/2*cos(2*x);
+  return 1/2 + (1/4)*x*x - x*sin(x) - (1/2)*cos(2*x);
 }
 double d1(double x){
-  return -1/2*(x - 2*sin(x)) * (2*cos(x)-1);
+  return x/2 - sin(x) + sin(2*x) + x*(-cos(x));
 }
 
 funcoes funcao[] = {
-  f1, d1
+  f1, d1,
 };
