@@ -4,40 +4,27 @@
 #define _USE_MATH_DEFINES
 #include <cmath>
 
-typedef double (*funcoes)(double x);
+typedef struct funcao{
+  int i;
+  double (*funcao)(double x);
+  char desc[100];
+}funcao;
+
+// Questão 1
+double f0(double h){
+  return 10 * ((0.5 * M_PI) - asin(h) - h * pow((1 - h * h), 1/2)) - 12.4;
+}
 
 double f1(double x){
-  return x - pow(2, -x);
+  return x*x + log(x);
 }
 
 double f2(double x){
-  return pow(M_E, x) - pow(x, 2) + (3 * x) - 2;
+  return sqrt(x) - cos(x);
 }
 
-double f3(double x){
-  return 2 * x * cos(2 * x) - pow(x + 1, 2);
-}
-
-double f4(double x){
-  return x * cos(x) - 2 * pow(x, 2) + 3 * x - 1;
-}
-
-double f5(double x){
-  return 3 * x - pow(M_E, x);
-}
-
-double f6(double x){
-  return x + 3 * cos(x) - pow(M_E, x);
-}
-
-double f7(double x){
-  return pow(x, 2) - 4 * x + 4 - log(x);
-}
-
-double f8(double x){
-  return x + 1 - 2 * sin(M_PI * x);
-}
-
-funcoes funcao[] = {
-  f1, f2, f3, f4, f5, f6, f7, f8
+funcao funcoes[] = {
+  0, f0, "f(x) = L * ((0.5 * PI) - arcsin(h) - h * pow((1 - h * h), 1/2)) - V",
+  1, f1, "f(x) = x^2 + ln(x)",
+  2, f2, "f(x) = sqrt(x) - cos(x)"
 };

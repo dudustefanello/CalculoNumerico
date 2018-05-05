@@ -1,13 +1,16 @@
 #include "funcoes.h"
+#include "../comum.h"
 
-double executar(double x, int f){
-  double y;
-  int i;
-  for (i = 0; 1; i++){
-    y = funcao[f - 1](x);
-    if (abs((y - x) / y) < EPSON) break;
-    x = y;
+retorno executar(double x, int f){
+  retorno ret;
+
+  for (ret.iteracoes = 0; ret.iteracoes < 1000; ret.iteracoes++){
+    ret.y = funcoes[f].funcao(x);
+
+    ret.erro = erro(ret.y, x);
+    if (ret.erro < EPSON) break;
+
+    x = ret.y;
   }
-  printf("%d Iteracoes\n", i);
-  return y;
+  return ret;
 }
