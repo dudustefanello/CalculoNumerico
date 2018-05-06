@@ -8,16 +8,19 @@ using namespace std;
 
 void imprimir(){
   if (linhas()) fprintf(arquivo, "A matriz não passou no criterio das linhas!\n");
-  else{
-    fprintf(arquivo, "A matriz passou no criterio das linhas.\n");
-  //  organizar();
-  }
-  organizar();
+  else fprintf(arquivo, "A matriz passou no criterio das linhas.\n\n");
 
   jacobi();
+  seidel();
 
+  fprintf(arquivo, "Gaus-Jacobi: \n");
   for (int i = 0; i < ordem; i++) {
     fprintf(arquivo, "%c = %3.5lf\n", varnomes[i], coeficientes[i]);
+  }
+
+  fprintf(arquivo, "\nGaus-Seidel: \n");
+  for (int i = 0; i < ordem; i++) {
+    fprintf(arquivo, "%c = %3.5lf\n", varnomes[i], coeficientes2[i]);
   }
 
   fprintf(arquivo, "\n");
