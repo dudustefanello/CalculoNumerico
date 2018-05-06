@@ -2,20 +2,17 @@
 *.exe
 *.o
 
-bissecao/interface
-bissecao/bissecao
-bissecao/funcoes
-bissecao/entrada
-bissecao/arquivo
-bissecao/main
+raizes/bissecao/interface
+raizes/bissecao/bissecao
 
-ponto-fixo/ponto-fixo
-ponto-fixo/arquivo
-ponto-fixo/funcoes
-ponto-fixo/entrada
-ponto-fixo/main
+raizes/ponto-fixo/ponto-fixo
+raizes/ponto-fixo/funcoes
 
-newton/main
-newton/newton
+raizes/newton/newton
 
 compiling_error.txt
+
+funcoes
+entrada
+arquivo
+main
