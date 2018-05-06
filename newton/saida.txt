@@ -1,0 +1,5 @@
+Funaco 1: 
+x = 2.44948974
+Iteracoes: 4
+Erro: 0.00000189
+

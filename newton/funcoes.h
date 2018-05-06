@@ -1,8 +1,6 @@
 #include "entrada.h"
 #include <iostream>
 
-
-
 typedef struct funcoes {
   double (*funcao)(double x);
   double (*derivada)(double x);
@@ -15,6 +13,14 @@ double d1(double x){
   return x/2 - sin(x) + sin(2*x) + x*(-cos(x));
 }
 
+double f2(double x){
+  return x*x - 6;
+}
+double d2(double x){
+  return 2*x;
+}
+
 funcoes funcao[] = {
   f1, d1,
+  f2, d2,
 };

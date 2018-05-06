@@ -4,10 +4,11 @@
 #include <cmath>
 
 typedef struct{
-  double x0;
   int f;
+  double x0;
 }tipoEntrada;
 
 tipoEntrada entradas[] = {
-  1, M_PI/2,
+  // 1, M_PI/2,
+  1, 1,
 };

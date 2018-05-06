@@ -29,7 +29,7 @@ int main(int argc, char const *argv[]) {
 
   fclose(arquivo);
 
-  //kill(getppid(), SIGKILL);
+  kill(getppid(), SIGKILL);
 
   return 0;
 }
